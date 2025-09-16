@@ -1,0 +1,143 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: #f4f5f7;
+  color: #333;
+  margin: 0;
+  width: 60%;
+  padding: 2rem;
+}
+
+.container {
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #ecf0f1;
+  padding-bottom: 0.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+
+  th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ecf0f1;
+  }
+
+  th {
+    font-weight: 600;
+    color: #7f8c8d;
+  }
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s;
+
+  &:hover {
+    color: #2980b9;
+  }
+}
+
+#notice {
+  background-color: #e8f6f3;
+  color: #1abc9c;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+}
+
+#todo_items_wrapper {
+  margin-top: 2rem;
+
+  .row {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ecf0f1;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .todo_item {
+    flex-grow: 1;
+    p {
+      margin: 0;
+    }
+  }
+
+  .complete, .trash {
+    margin-left: 1rem;
+  }
+}
+
+#form {
+  margin-top: 2rem;
+
+  input[type="text"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #dcdfe6;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+
+    &:focus {
+      outline: none;
+      border-color: #3498db;
+    }
+  }
+
+  input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+
+    &:hover {
+      background-color: #2980b9;
+    }
+  }
+}
+
+.links {
+  margin-top: 2rem;
+  a {
+    margin-right: 1rem;
+  }
+}
